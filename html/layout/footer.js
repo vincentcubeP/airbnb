@@ -18,12 +18,11 @@ var str =
                 <li>·</li>
                 <li>회사 세부정보</li>
             </ul>
-            <ul class="footerSide">
-                <li></li>
-                <li>한국어(KR)</li>
+            <ul class="footerSide">                
+                <li><img src="../../image/icon-global.svg" alt="">한국어(KR)</li>
+                <li>₩</li>
                 <li>KRW</li>
                 <li>지원 및 참고 자료</li>
-                <li></li>
             </ul>
         </div>
     </div>
