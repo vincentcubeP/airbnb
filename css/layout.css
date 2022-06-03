@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.logo {    
+.logo {
     line-height: 80px;    
 }
 .logo img {
@@ -70,7 +70,7 @@ header {
     margin: 0 7px 0 20px;
     vertical-align: middle;
 }
-.loginMenu {
+.loginMenu {    
     display: flex;
     align-items: center;
 }
@@ -117,20 +117,12 @@ header {
     max-width: 1600px;
     display: flex;
     align-items: center;
+    position: relative;
+    background-color: white;
 }
 .menuSlide {    
     width: 100%; 
     display: flex;   
-}
-.menuSlideBox {
-    margin-right: 30px;
-    padding: 4px 0 14px 0;
-    opacity: 0.7;
-    cursor: pointer;
-}
-.menuSlideBox:hover {
-    opacity: 1;
-    border-bottom: 2px solid #ddd;
 }
 .menuSlidePhoto {
     margin: 0 auto;
