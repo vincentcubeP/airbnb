@@ -1,3 +1,49 @@
 .listBox {
+    margin-top: 30px;
+    width: 18.8%;
+    font-size: 15px;
     cursor: pointer;
+}
+.listBoxPhoto {
+    margin-bottom: 16px;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 6%;
+    background-color: #eee;
+    position: relative;
+}
+.listBoxPhoto button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+}
+.listBoxTop {
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+.listBoxName {
+    font-weight: 600;
+}
+.listStar {    
+    right: 10px;
+    display: flex;;
+}
+.listStar span {
+    margin-right: 2px;
+}
+.listBoxInfo {
+    height: 19px;
+    color: #717171;
+}
+.listBoxDate {
+    height: 19px;
+    color: #717171;
+}
+.listBoxPrice {
+    height: 19px;
+}
+.listBoxPrice span {
+    font-weight: 600;
 }
