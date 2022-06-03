@@ -8,19 +8,53 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <script type="text/javascript" src="./js/slider.js"></script>
 </head>
 <body>
     <div class="wrap">
         <header><script src="./html/layout/header.js" id="header"></script></header>
         <div class="main">
             <div class="list">
-                <div class="listBox">
-                    <div class="listBoxPhoto">
-                        <button aria-label="목록에 숙소 추가하기" type="button" class="b1lx45fx v1qb14d3 dir dir-ltr">
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;">
-                                <path stroke="white" stroke-width="2" d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
-                            </svg>
-                        </button>
+                <div class="listBox"> 
+                    <div class='walkthrough show reveal'>                        
+                        <div class='walkthrough-body'>
+                            <button aria-label="목록에 숙소 추가하기" type="button" class="b1lx45fx v1qb14d3 dir dir-ltr">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;">
+                                    <path stroke="white" stroke-width="2" d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                                </svg>
+                            </button>
+                            <div class='walkthrough-pagination'>
+                                <a class='dot active'></a>
+                                <a class='dot'></a>
+                                <a class='dot'></a>
+                                <a class='dot'></a>
+                                <a class='dot'></a>
+                            </div>
+                            <ul class='screens animate'>
+                                <li class='screen active'>
+                                    <img src="./image/realingen-1.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-2.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-3.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-4.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-5.webp">
+                                </li>
+                            </ul>
+                            <button class='prev-screen'>
+                            <i class='icon-angle-left'></i>
+                            </button>
+                            <button class='next-screen'>
+                            <i class='icon-angle-right'></i>
+                            </button>
+                        </div>                   
                     </div>
                     <div class="listBoxTop">
                         <div class="listBoxName">Raelingen, 노르웨이</div>
@@ -40,5 +74,6 @@
         <footer><script src="./html/layout/footer.js" id="footer"></script></footer>
     </div>
     <script type="text/javascript" src="./js/includeHTML.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
 </body>
 </html>

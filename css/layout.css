@@ -7,6 +7,7 @@ header {
     width: 100%;
     position: fixed; 
     top: 0;
+    background-color: white;
     z-index: 10;
 }
 .headerTop {
@@ -117,12 +118,36 @@ header {
     display: flex;
     align-items: center;
 }
-.menuSlide {
-    width: 100%;
+.menuSlide {    
+    width: 100%; 
+    display: flex;   
+}
+.menuSlideBox {
+    margin-right: 30px;
+    padding: 4px 0 14px 0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.menuSlideBox:hover {
+    opacity: 1;
+    border-bottom: 2px solid #ddd;
+}
+.menuSlidePhoto {
+    margin: 0 auto;
+    width: 24px;
+}
+.menuSlidePhoto img {
+    width: 24px;
+}
+.menuSlideName {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
 }
 .menuFilter {
     padding-left: 24px;
-    height: 50px;
+    height: 50px;   
 }
 .menuFilterBox {
     padding: 7px 0;
@@ -190,6 +215,7 @@ footer {
 .footerMenu {
     margin: 0 auto;
     border-top: 1px solid #ddd;
+    background-color: white;
 }
 .footerBox {
     margin: 0 auto;

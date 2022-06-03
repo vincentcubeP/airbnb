@@ -4,20 +4,6 @@
     font-size: 15px;
     cursor: pointer;
 }
-.listBoxPhoto {
-    margin-bottom: 16px;
-    width: 100%;
-    padding-bottom: 100%;
-    border-radius: 6%;
-    background-color: #eee;
-    position: relative;
-}
-.listBoxPhoto button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-}
 .listBoxTop {
     height: 19px;
     display: flex;
