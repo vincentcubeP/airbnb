@@ -206,3 +206,16 @@
     display: table-cell;
     vertical-align: middle;
 }
+.popup-etc-list {
+    margin: 0 200px 0 80px;
+    font-size: 14px;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+}
+.popup-etc-list ul li:first-child {
+    font-weight: 600;
+}
+.popup-etc-list li {
+    margin-bottom: 24px;
+}
