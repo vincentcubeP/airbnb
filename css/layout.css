@@ -237,7 +237,7 @@ footer {
     margin-right: 10px;
 }
 .footerSide img {
-    margin-right: 10px;
+    margin: auto 10px;
     width: 16px;
     vertical-align: middle;
 }

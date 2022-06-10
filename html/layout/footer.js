@@ -20,10 +20,10 @@ var str =
                 <li><a>회사 세부정보</a></li>
             </ul>
             <ul class="footerSide">                
-                <li><img src="../../image/icon-global.svg" alt=""><a id="show">한국어(KR)</a></li>
+                <li id="show"><img src="../../image/icon-global.svg" alt=""><a>한국어(KR)</a></li>
                 <li>₩</li>
-                <li><a>KRW</a></li>
-                <li><a>지원 및 참고 자료</a></li>
+                <li><a id="show1">KRW</a></li>
+                <li id="show2"><a>지원 및 참고 자료<img src="../../image/icon-clamp.svg" alt=""></a></li>
             </ul>
         </div>
     </div>
