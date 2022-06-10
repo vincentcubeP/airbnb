@@ -26,93 +26,104 @@ var str =
         </div>
     </div>
     <div class="headerMenu">
-        <div class="menu">          
-            <div class="controller">                 
-              <span class="prev">&lang;</span>  
-            </div>
-            <div id="slideShow">
-              <ul class="slides">                  
-                <li>
+        <div id="menu">
+          <button class="prev">&lt;</button>
+          <div class="slide">
+              <div class="slide-box">
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-design.jpg"></div>
                   <div class="menuSlideName">디자인</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-lake.jpg"></div>
                   <div class="menuSlideName">호숫가</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-nationalPark.jpg"></div>
                   <div class="menuSlideName">국립공원</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-logCabin.jpg"></div>
                   <div class="menuSlideName">통나무집</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-island.jpg"></div>
                   <div class="menuSlideName">섬</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>   
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>
-                <li>
+                </div>
+                <div class="slide-list">
                   <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
                   <div class="menuSlideName">해변근처</div>
-                </li>           
-              </ul>
-            </div> 
-            <div class="controller contR">                 
-              <!-- <span class="prev">&lang;</span>   -->
-              <span class="next">&rang;</span>
-            </div>
-            <div class="menuFilter">
-                <div class="menuFilterBox"><img class="icon-menu" src="../../image/icon-filter.svg" alt="">필터</div>
-            </div>
+                </div>
+                <div class="slide-list">
+                  <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
+                  <div class="menuSlideName">해변근처</div>
+                </div>
+                <div class="slide-list">
+                  <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
+                  <div class="menuSlideName">해변근처</div>
+                </div>
+                <div class="slide-list">
+                  <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
+                  <div class="menuSlideName">해변근처</div>
+                </div>
+                <div class="slide-list">
+                  <div class="menuSlidePhoto"><img src="../../image/menu-icon-beach.jpg"></div>
+                  <div class="menuSlideName">해변근처</div>
+                </div>
+              </div>
+          </div>
+          <button class="next">&gt;</button>
+          <div class="menuFilter">
+            <div class="menuFilterBox"><img class="icon-menu" src="../../image/icon-filter.svg" alt="">필터</div>
+        </div>
         </div>
     </div>
   </div>
