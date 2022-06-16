@@ -18,3 +18,19 @@ footer {
     margin: 0 auto;
     padding: 0 80px;
 }
+
+@media (max-width:1100px) {
+    .main {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width:960px) {
+    
+}
+
+@media (max-width:740px) {
+    .main {
+        padding: 0 24px;
+    } 
+}
