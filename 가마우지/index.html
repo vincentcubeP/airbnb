@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airbnb copy</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <script type="text/javascript" src="./js/slide.js"></script>   
+    <script type="text/javascript" src="./js/slider.js"></script>   
+</head>
+<body>
+    <div class="wrap">
+        <header><script src="./html/layout/header.js" id="header"></script></header>
+        <div class="main">
+            <div class="list">
+                <div class="listBox"> 
+                    <div class='walkthrough show reveal'>                        
+                        <div class='walkthrough-body'>
+                            <button aria-label="목록에 숙소 추가하기" type="button" class="b1lx45fx v1qb14d3 dir dir-ltr">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;">
+                                    <path stroke="white" stroke-width="2" d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                                </svg>
+                            </button>
+                            <div class='walkthrough-pagination'>
+                                <a class='dot active'></a>
+                                <a class='dot'></a>
+                                <a class='dot'></a>
+                                <a class='dot'></a>
+                                <a class='dot'></a>
+                            </div>
+                            <ul class='screens animate'>
+                                <li class='screen active'>
+                                    <img src="./image/realingen-1.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-2.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-3.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-4.webp">
+                                </li>
+                                <li class='screen'>
+                                    <img src="./image/realingen-5.webp">
+                                </li>
+                            </ul>
+                            <button class='prev-screen'>
+                            <i class='icon-angle-left'></i>
+                            </button>
+                            <button class='next-screen'>
+                            <i class='icon-angle-right'></i>
+                            </button>
+                        </div>                   
+                    </div>
+                    <div class="listBoxTop">
+                        <div class="listBoxName">Raelingen, 노르웨이</div>
+                        <div class="listStar">
+                            <span>4.95</span>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="listBoxInfo">Venuereport에 소개</div>
+                    <div class="listBoxDate">10월9일~14일</div>
+                    <div class="listBoxPrice"><span>₩686,788</span>/박</div>
+                </div>
+            </div>
+        </div>
+        <footer><script src="./html/layout/footer.js" id="footer"></script></footer>
+        <div class="popup-lang">
+            <div class="popup-window">
+                <div class="popup">
+                    <div class="popup-top">
+                        <button id="close"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
+                    </div>
+                    <div class="translation">
+                        <div>
+                            <span>번역</span>
+                            <p>설명과 후기가 한국어로 자동 번역됩니다.</p>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch">
+                            <label for="switch" class="switch_label">
+                                <span class="onf_btn"></span>
+                            </label>
+                            </div>                        
+                    </div>
+                    <div class="popup-title">추천 언어 및 지역</div>
+                    <div class="popup-lang-re popup-cont">
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">English</p><p class="curr">United States</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">English</p><p class="curr">United Kingdom</p></span>
+                        </div>
+                    </div>
+                    <div class="popup-title">언어와 지역을 선택하세요.</div>
+                    <div class="popup-cont">
+                        <div class="popup-cont-box mark1">
+                            <span><p class="curr-country">한국어</p><p class="curr">대한민국</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-curr">
+            <div class="popup-window">
+                <div class="popup">
+                    <div class="popup-top">
+                        <button id="close1"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
+                    </div>
+                    <div class="popup-title">통화를 선택하세요.</div>
+                    <div class="popup-cont">
+                        <div class="popup-cont-box mark1">
+                            <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                        </div>
+                        <div class="popup-cont-box">
+                            <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-etc">
+            <div class="popup-window">
+                <div class="popup-etc-cont">
+                    <div class="popup-etc-cont-top">
+                        <button id="close2"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
+                    </div>
+                    <div class="popup-etc-list">
+                        <ul>
+                            <li>에어비앤비 지원</li>
+                            <li><a>도움말 센터</a></li>
+                            <li><a>에어커버</a></li>
+                            <li><a>안전 정보</a></li>
+                            <li>장애인 지원</li>
+                            <li>예약 취소 옵션</li>
+                            <li>에어비앤비의 코로나19대응 방안</li>
+                            <li>이웃 민원 신고</li>
+                        </ul>
+                        <ul>
+                            <li>커뮤니티</li>
+                            <li>Airbnb.org: 재난 구호 숙소</li>
+                            <li>아프간 난민 지원</li>
+                            <li>차별 철폐를 위한 노력</li>
+                        </ul>
+                        <ul>
+                            <li>호스팅</li>
+                            <li>호스팅 시작하기</li>
+                            <li>호스트를 위한 에어커버</li>
+                            <li>호스팅 자료 둘러보기</li>
+                            <li>커뮤니티 포럼 방문하기</li>
+                            <li>책임감 있는 호스팅</li>
+                        </ul>
+                        <ul>
+                            <li>소개</li>
+                            <li>뉴스룸</li>
+                            <li>새로운 기능에 대해 알아보기</li>
+                            <li>에어비앤비 공동 창업자의 메시지</li>
+                            <li>채용정보</li>
+                            <li>투자자 정보</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/includeHTML.js"></script>
+    <script type="text/javascript" src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
+</body>
+</html>
