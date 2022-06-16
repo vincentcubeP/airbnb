@@ -194,7 +194,10 @@
     .header-top {
         display: none;
     }
-    .header-top, .header-slide {
+    .header-slide {
         padding: 0 24px;
     } 
+    .header-filter {
+        display: none;
+    }
 }
