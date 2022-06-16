@@ -49,13 +49,17 @@
     justify-content: space-between;
 }
 .footer-menu ul {
-    display: flex;
+    display: flex;    
+}
+.footer-menu-info {    
+    /* word-break: keep-all; */
 }
 .footer-menu-info li {
     margin-right: 10px;
 }
 .footer-menu-etc {
     font-weight: 600;
+    
 }
 .footer-menu-etc li {
     margin-left: 20px;
