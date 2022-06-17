@@ -1,7 +1,7 @@
 .main {
     max-width: 1760px;    
     margin: 200px auto 0;
-    padding: 0 80px;     
+    padding: 0 80px 100px;     
 }
 .main-box {
     width: 100%;
@@ -38,7 +38,7 @@
 }
 .swiper-slide-main .swiper-wrapper .swiper-slide {
     margin: 0;
-    object-fit: cover;
+    /* object-fit: cover; */
 } 
 .swiper-slide-main img { 
     object-fit: cover;
@@ -62,7 +62,7 @@
 }
 .listStar {    
     right: 10px;
-    display: flex;;
+    display: flex;
 }
 .listStar span {
     margin-right: 2px;
@@ -82,6 +82,16 @@
     font-weight: 600;
 }
 
+.a {
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; */
+    border: 3px solid black;
+}
+.a img, .b {
+    display: block;
+    object-fit: cover;
+}
 
 @media (max-width:1600px) {
     .main-box {       
@@ -114,3 +124,4 @@
         row-gap: 30px;
     }
 }
+
