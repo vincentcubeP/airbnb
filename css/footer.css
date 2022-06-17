@@ -1,10 +1,11 @@
 .footer-map {
     max-width: 1760px;
+    margin: 0 auto;
     padding: 0 80px;
 }
 .footer-map button {
     width: 150px;
-    height: 48px;    
+    height: 48px;
     margin: 0 auto;
     margin-bottom: 40px;
     color: white;

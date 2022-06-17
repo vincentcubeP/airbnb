@@ -7,12 +7,7 @@ header {
     position: fixed; 
     top: 0;
     background-color: white;
-    z-index: 1;
-}
-#main {
-    max-width: 1760px;
-    margin: 0 auto;
-    padding: 0 80px;
+    z-index: 10;
 }
 footer {
     width: 100%;
