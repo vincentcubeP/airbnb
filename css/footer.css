@@ -86,7 +86,17 @@
 }
 .footer-menu-etc li {
     margin-left: 20px;
+    display: flex;
     cursor: pointer;
+}
+#show svg {
+    margin-right: 10px;
+}
+#show1 {
+    margin-left: 10px;
+}
+#show2 svg {
+    margin-left: 5px;
 }
 
 
