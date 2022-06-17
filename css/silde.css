@@ -1,5 +1,38 @@
 .swiper {
+    max-width: 1500px;   
     height: 80px;
     margin-top: 18px;
-    border: 1px solid black;  
+}
+.swiper-slide {
+    margin-top: 20px;
+    align-items: center;
+    font-size: 12px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.swiper-slide:hover {
+    opacity: 1;
+}
+.swiper-slide:hover span {
+    border-bottom: 2px solid #ddd;
+}
+.menu-slide-title span {
+   padding-bottom: 12px;
+}
+.active {
+    opacity: 1;
+}
+.menu-slide-photo {
+    margin: 0 auto;
+    width: 24px;
+}
+.menu-slide-photo img {
+    width: 24px;
+}
+.menu-slide-title {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
 }
