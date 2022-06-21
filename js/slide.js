@@ -4,8 +4,8 @@ $(document).ready(function() {
         width: 80,        
         loop: false,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-header-button-next',
+            prevEl: '.swiper-header-button-prev',
         }
-    })    
+    })       
 });

@@ -1,9 +1,12 @@
-.swiper {
+.swiper-container {
     max-width: 1500px;   
     height: 80px;
     margin-top: 18px;
 }
-.swiper-slide {
+.swiper-container .swiper-wrapper {
+    /* display: flex; */
+}
+.swiper-container .swiper-slide {
     margin-top: 20px;
     align-items: center;
     font-size: 12px;
@@ -11,26 +14,26 @@
     cursor: pointer;
     transition: all 0.2s;
 }
-.swiper-slide:hover {
+.swiper-container .swiper-slide:hover {
     opacity: 1;
 }
-.swiper-slide:hover span {
+.swiper-container .swiper-slide:hover span {
     border-bottom: 2px solid #ddd;
 }
-.menu-slide-title span {
+.swiper-container .menu-slide-title span {
    padding-bottom: 12px;
 }
-.active {
+.swiper-container .active {
     opacity: 1;
 }
-.menu-slide-photo {
+.swiper-container .menu-slide-photo {
     margin: 0 auto;
     width: 24px;
 }
-.menu-slide-photo img {
+.swiper-container .menu-slide-photo img {
     width: 24px;
 }
-.menu-slide-title {
+.swiper-container .menu-slide-title {
     margin-top: 5px;
     font-size: 12px;
     font-weight: 600;

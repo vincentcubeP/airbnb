@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var mySwiper = new Swiper ('.swiper-slide-main',{
+    var mySwiper1 = new Swiper1 ('.swiper-slide-main',{
         direction: 'horizontal',
         loop: false,
         navigation: {
