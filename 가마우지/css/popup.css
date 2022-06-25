@@ -5,7 +5,7 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    /* z-index: 1000; */
     
     /* 숨기기 */
     z-index: -1;
@@ -17,7 +17,7 @@
 .show, .show1, .show2 {
     opacity: 1;
     z-index: 1000;
-    transition: all .5s;
+    transition: all .2s;
 }
 .popup-window {
     position: relative;
