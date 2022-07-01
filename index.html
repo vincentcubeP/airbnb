@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>airbnb clone</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- <link rel="stylesheet" href="./css/style.css">
-     -->
-     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/layout.css"> -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script type="text/javascript" src="./js/slide-main.js"></script>
-    <script type="text/javascript" src="./js/slide.js"></script> -->
-    <!-- <script type="text/javascript" src="./js/popup.js"></script> -->
+    <script type="text/javascript" src="./js/slide-main.js"></script>
+    <script type="text/javascript" src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
 </head>
 <body>
     <div class="wrap">
-        <header id="header"></header>
-        <div id="main"></div>
-        <footer id="footer"></footer>
-        <div id="popup"></div>
+        <header id="header"  w3-include-html="./html/header.html"></header>
+        <div id="main"  w3-include-html="./html/main.html"></div>
+        <footer id="footer" w3-include-html="./html/footer.html"></footer>
+        <div id="popup" w3-include-html="./html/popup.html"></div>
     </div>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <!-- <script type="text/javascript" src="./js/index.js"></script> -->
+    <script>w3.includeHTML();</script>
 </body>
 </html>
