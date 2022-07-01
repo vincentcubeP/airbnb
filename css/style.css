@@ -173,28 +173,21 @@ footer {
     align-items: center;
 }
 .header-slide-frame {
-    width: 100%;
+    max-width: 1660px;
     height: 100px;
 }
-.header-filter {
-    width: 80px;
-    height: 48px;
-    margin-left: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-}
+
 
 .swiper-container {
-    max-width: 1500px;   
+    max-width: 1660px;   
     height: 80px;
-    margin-top: 18px;
+    margin: 18px auto 0;
+    border: 1px solid green;
 }
 .swiper-container .swiper-wrapper {
-    /* display: flex; */
+    width: 90%;  
+    border: 1px solid rgb(0, 51, 128);
+    display: flex;
 }
 .swiper-container .swiper-slide {
     margin-top: 20px;
@@ -237,9 +230,117 @@ footer {
     text-align: center;
 }
 
+.header-filter {
+    width: 80px;
+    height: 48px;
+    margin-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
 
 
 /* main */
+.main {
+    max-width: 1760px;    
+    margin: 200px auto 0;
+    padding: 0 80px 100px;     
+}
+.main-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.5%;
+    row-gap: 30px;
+}
+.listBox {
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.swiper-slide-main {
+    width: 100%;
+    padding-top: 100%;
+    position: relative; 
+    border-radius: 4%;
+    overflow: hidden;
+}
+.swiper-slide-main svg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+}
+.swiper-slide-main .swiper-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.swiper-slide-main .swiper-wrapper .swiper-slide {
+    margin: 0;
+    /* object-fit: cover; */
+} 
+.swiper-slide-main img { 
+    object-fit: cover;
+}
+.swiper-slide-main .swiper-pagination, .swiper-slide-main .swiper-button-prev, .swiper-slide-main .swiper-button-next {
+    z-index: 1;
+}
+
+.listBoxTop {    
+    height: 19px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.listBoxName {
+    font-weight: 600;
+}
+.listBoxName, .listBoxInfo, .listBoxDate, .listBoxPrice {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.listStar {    
+    right: 10px;
+    display: flex;
+}
+.listStar span {
+    margin-right: 2px;
+}
+.listBoxInfo {
+    height: 19px;
+    color: #717171;
+}
+.listBoxDate {
+    height: 19px;
+    color: #717171;
+}
+.listBoxPrice {
+    height: 19px;
+}
+.listBoxPrice span {
+    font-weight: 600;
+}
+
+.a {
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; */
+    border: 3px solid black;
+}
+.a img, .b {
+    display: block;
+    object-fit: cover;
+}
+
 
 
 /* footer */
@@ -356,7 +457,7 @@ footer {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    /* z-index: 1000; */
+    z-index: 100;
     
     /* 숨기기 */
     z-index: -1;
@@ -367,7 +468,7 @@ footer {
 }
 .show, .show1, .show2 {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
     transition: all .2s;
 }
 .popup-window {
