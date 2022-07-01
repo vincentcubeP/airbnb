@@ -1,3 +1,33 @@
+/* header slide */
+$(document).ready(function() {
+    var mySwiper = new Swiper ('.swiper-container',{
+        direction: 'horizontal',
+        width: 80,        
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-header-button-next',
+            prevEl: '.swiper-header-button-prev',
+        }
+    })       
+});
+
+
+/* main slider */
+$(document).ready(function() {
+    var mySwiper1 = new Swiper1 ('.swiper-slide-main',{
+        direction: 'horizontal',
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+          },
+    })    
+});
+
+/* popup */
 function show () {
     document.querySelector(".popup-lang").className = "popup-lang show";
 }
