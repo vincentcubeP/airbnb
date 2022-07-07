@@ -111,7 +111,7 @@
     text-overflow: ellipsis;
 }
 .header-search-btn:hover {
-    box-shadow: none;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.2);
 }
 .btn-guest {
     font-weight: none;
@@ -138,6 +138,7 @@
     justify-content: flex-end;
     align-items: center;
     font-weight: 600;
+    position: relative;
 }
 .header-login div {
     margin-left: 10px;
@@ -179,6 +180,27 @@
 .person {
     fill: #717171;
 }
+/* .login-popup {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 900;
+}
+.login-popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+.login-popup-frame {
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 10px;
+    top: 80px;
+    background-color: white;
+} */
+
 .header-bottom {
     width: 100%; 
 }
@@ -224,19 +246,6 @@
     font-size: 15px;
     
 }
-/* .swiper-slide-main {
-    width: 100%;
-    padding-top: 100%;
-    position: relative; 
-    border-radius: 4%;
-    overflow: hidden;
-} */
-.swiper-wrapper svg {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    z-index: 2;
-}
 .swiper-wrapper {
     width: 100%;
     padding-top: 100%;
@@ -244,31 +253,27 @@
     border-radius: 4%;
     overflow: hidden;
 }
-/* .swiper-slide-main .swiper-wrapper {
+.swiper-wrapper svg {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+}
+.swiper-wrapper .swiper-slide img {
     width: 100%;
     height: 100%;
-} */
-.swiper-wrapper .swiper-slide {
-    width: 100%;
-    height: 100%;
+    margin: 0;  
     position: absolute;
     top: 50%;
     left: 50%;
     bottom: 0;
     right: 0;    
     transform: translate(-50%, -50%);
-}
-.swiper-slide-main .swiper-wrapper .swiper-slide {
-    margin: 0;    
-} 
-.swiper-slide img { 
     object-fit: cover;
 }
+/* .swiper-slide img { 
+    object-fit: cover;
+} */
 .swiper-slide-main .swiper-pagination, .swiper-slide-main .swiper-button-prev, .swiper-slide-main .swiper-button-next {
     z-index: 1;
 }
@@ -411,6 +416,229 @@
 }
 .footer-mobile svg {
     margin: 0 auto;
+}
+
+
+/* popup */
+.popup-lang, .popup-curr, .popup-etc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* z-index: 100; */
+    
+    /* 숨기기 */
+    z-index: -1;
+    opacity: 0;
+}
+.popup-lang:target, .show1, .show2 {
+    opacity: 1;
+    z-index: 100;
+    transition: all .2s;
+}
+.popup-window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    /* 임시 지정 */
+    width: 1032px;
+    height: 805px;
+
+    /* 초기에 약간 아래에 배치 */
+    /* transform: translate(-50%, -40%); */
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+.show .popup, .show1 .popup, .show2 .popup-etc-cont {
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+.popup-top {
+    width: 100vw;
+    height: 60px;
+    border-bottom: 1px solid #f7f7f7; 
+    display: table-cell;
+    vertical-align: middle;
+}
+.popup-top button {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popup-etc-cont-top button {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popup-top button:hover, .popup-etc-cont-top button:hover {
+    background-color: #f7f7f7;
+}
+.popup-title {
+    margin: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+.translation {
+    margin: 24px;
+    padding: 16px;
+    width: 380px;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    display: flex;
+}
+.translation span {    
+    font-size: 16px;
+    color: #222;
+}
+.translation p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #717171;
+}
+.wrapper {
+    /* width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 50px auto; */
+    margin-left: 20px;
+  }
+  #switch {
+    position: absolute;
+    /* hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }  
+  .switch_label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 58px;
+    height: 36px;
+    background: #ddd;
+    /* border: 2px solid #ddd; */
+    border-radius: 20px;
+    transition: 0.2s;
+  }
+  .switch_label:hover {
+    background: #222;
+  }
+  .onf_btn {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: white;
+    transition: 0.2s;
+  }
+  
+  /* checking style */
+  #switch:checked+.switch_label {
+    background: #ddd;
+    /* border: 2px solid #ddd; */
+  }
+  
+  /* #switch:checked+.switch_label:hover {
+    background: #e55;
+  } */
+  
+  /* move */
+  #switch:checked+.switch_label .onf_btn {
+    left: 25px;
+    background: #fff;
+    box-shadow: 1px 2px 3px #00000020;
+  }
+.popup-cont {
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.popup-cont-box {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 184px;
+    height: 56px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;    
+}
+.popup-cont-box:hover {    
+    background-color: #f7f7f7;
+}
+.mark1 {
+    padding: 7px;
+    width: 184px;
+    height: 56px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.popup-cont-box span p {
+    margin: 2px 0 2px 10px;
+}
+.curr-country {
+    color: #222;
+}
+.curr {
+    color: #717171;
+}
+
+
+.popup-etc-cont {
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    /* 임시 지정 */
+    width: 100%;
+    height: 400px;
+
+    /* 초기에 약간 아래에 배치 */
+    transform: translate(-50%, 0%);
+}
+.popup-etc-cont-top {
+    width: 100vw;
+    height: 60px;   
+    display: table-cell;
+    vertical-align: middle;
+}
+.popup-etc-list {
+    margin: 0 200px 0 80px;
+    font-size: 14px;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+}
+.popup-etc-list ul li:first-child {
+    font-weight: 600;
+}
+.popup-etc-list li {
+    margin-bottom: 24px;
 }
 
 
