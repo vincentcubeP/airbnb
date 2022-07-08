@@ -7,7 +7,7 @@
     width: 100%;
     position: fixed; 
     top: 0;
-    z-index: 1;
+    z-index: 10;
     background-color: white;    
 }
 .header-top {
@@ -155,12 +155,92 @@
 }
 
 
+/* main */
+.main {
+    max-width: 1760px;
+    margin: 220px auto 140px;
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.5%;
+    row-gap: 30px;
+}
+.list-box {
+    cursor: pointer;
+}
+.slide {
+    width: 100%;
+    padding-top: 100%;
+    position: relative; 
+    border-radius: 4%;
+    overflow: hidden;
+}
+.heart-icon svg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+}
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;    
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.list-title {    
+    height: 19px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-name {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-star {    
+    right: 10px;
+    display: flex;
+}
+.list-star span {
+    margin-right: 2px;
+}
+.list-distance {
+    height: 19px;
+    color: #717171;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-data {
+    height: 19px;
+    color: #717171;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-price {
+    height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-price span {
+    font-weight: 600;
+}
+
+
+
 /* footer */
 .footer {
     width: 100%;
     position: fixed; 
     bottom: 0;
-    z-index: 1;
+    z-index: 10;
 }
 .footer-map {
     margin-bottom: 40px;
@@ -189,13 +269,14 @@
     margin-left: 10px;
 }
 .footer-bottom {
-    max-width: 1760px;
-    padding: 0 80px;
-    border-top: 1px solid #ddd;
+    width: 100%;
+    border-top: 1px solid #ddd;    
     background-color: white;
 }
 .footer-menu {
-    padding: 13px 0 14px;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 13px 80px 14px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -228,7 +309,9 @@
     margin-left: 20px;
 }
 .footer-info {
-    padding-bottom: 8px;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 80px 8px;
 }
 .footer-info-content {
     width: 100%;
