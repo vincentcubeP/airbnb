@@ -1,4 +1,19 @@
+/* modal popup */
+$(document).ready(function( $ ){
+    $(".header-login").on("click", function(event) { //팝업오픈 버튼 누르면
+    $("#modal").show(); //팝업 오픈
+    });
+    
+    $("body").on("click", function(event) {
+        if(event.target.className == 'header-login'){
+            $("#modal").hide(); //close버튼 이거나 뒷배경 클릭시 팝업 삭제
+        }
+    });
+});
+
+
 /* popup */
+window.onload = function() {
 function show () {
     document.querySelector(".popup-lang").className = "popup-lang show";
 }
@@ -28,3 +43,4 @@ function close2 () {
 document.querySelector("#show2").addEventListener('click', show2);
 document.querySelector("#close2").addEventListener('click', close2);
 document.querySelector("#popup-bg2").addEventListener('click', close2);
+};

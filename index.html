@@ -8,12 +8,42 @@
     <link rel="shortcut icon" href="./image/Airbnb_icon.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
     <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
 </head>
 <body>
     <div class="wrap">
         <header id="header"  w3-include-html="./html/header.html">
             <div class="header">
+                <div class="header-mobile">
+                    <div class="mobile-search">
+                        <div>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                <path d="M13 0c7.18 0 13 5.82 13 13 0 2.868-.929 5.519-2.502 7.669l7.916 7.917-2.828 2.828-7.917-7.916A12.942 12.942 0 0 1 13 26C5.82 26 0 20.18 0 13S5.82 0 13 0zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z" opacity=".8"></path>
+                            </svg>
+                        </div>
+                        <div class="mobile-search-title"><p>어디로 여행가세요?</p></div>
+                        <div class="mobile-search-control">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: rgb(34, 34, 34);">
+                                <path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-modal" id="modal">
+                    <div class="modal-box">
+                        <div class="modal-box-top">
+                            <div class="signup modal-hover">회원 가입</div>
+                            <div class="signin modal-hover">로그인</div>
+                        </div>
+                        <div class="modal-box-bottom">
+                            <div class="will-host modal-hover">숙소 호스트 되기</div>
+                            <div class="hosting modal-hover">체험 호스팅하기</div>
+                            <div class="help modal-hover">도움말</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header-top">
                     <div class="header-top-menu">
                         <div class="header-logo">
@@ -41,14 +71,14 @@
                                     <path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"></path>
                                 </svg>
                             </div>
-                            <div class="header-login">
+                            <button class="header-login" id="header-login">
                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                                     <g fill="none" fill-rule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g>
                                 </svg>
                                 <svg class="person" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 30px; width: 30px;">
                                     <path d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"></path>
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -75,7 +105,59 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/realingen-1.jpg">
+                        </div>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">
+                            <div class="list-name">Murter,크로아티아</div>
+                            <div class="list-star">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
+                                </svg>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="list-distance">8,637km 거리</div>
+                        <div class="list-data">10월 15일~23일</div>
+                        <div class="list-price">₩213,168/박</div>
+                    </div>
+                </div>
+                <div class="list-box">
+                    <div class="slide">
+                        <div class="heart-icon">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
+                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                            </svg>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./image/realingen-2.jpg">
+                        </div>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">
+                            <div class="list-name">Murter,크로아티아</div>
+                            <div class="list-star">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
+                                </svg>
+                                <span>NEW</span>
+                            </div>
+                        </div>
+                        <div class="list-distance">8,637km 거리</div>
+                        <div class="list-data">10월 15일~23일</div>
+                        <div class="list-price">₩213,168/박</div>
+                    </div>
+                </div>
+                <div class="list-box">
+                    <div class="slide">
+                        <div class="heart-icon">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
+                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                            </svg>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./image/realingen-3.jpg">
                         </div>
                     </div>
                     <div class="list-content">
@@ -127,7 +209,7 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/373443ec-b377-4181-b753-3a2f3508c2b3.webp">
                         </div>
                     </div>
                     <div class="list-content">
@@ -138,6 +220,32 @@
                                     <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
                                 </svg>
                                 <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="list-distance">8,637km 거리</div>
+                        <div class="list-data">10월 15일~23일</div>
+                        <div class="list-price">₩213,168/박</div>
+                    </div>
+                </div>
+                <div class="list-box">
+                    <div class="slide">
+                        <div class="heart-icon">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
+                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                            </svg>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./image/78fb8268-b999-4389-b072-e2a66910e41b.webp">
+                        </div>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">
+                            <div class="list-name">Murter,크로아티아</div>
+                            <div class="list-star">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
+                                </svg>
+                                <span>NEW</span>
                             </div>
                         </div>
                         <div class="list-distance">8,637km 거리</div>
@@ -179,7 +287,7 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/realingen-4.webp">
                         </div>
                     </div>
                     <div class="list-content">
@@ -205,7 +313,33 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/9f5e2990-665a-4e8d-a5ad-89881fff8d33.webp">
+                        </div>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">
+                            <div class="list-name">Murter,크로아티아</div>
+                            <div class="list-star">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
+                                </svg>
+                                <span>NEW</span>
+                            </div>
+                        </div>
+                        <div class="list-distance">8,637km 거리</div>
+                        <div class="list-data">10월 15일~23일</div>
+                        <div class="list-price">₩213,168/박</div>
+                    </div>
+                </div>
+                <div class="list-box">
+                    <div class="slide">
+                        <div class="heart-icon">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
+                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                            </svg>
+                        </div>
+                        <div class="slide-img">
+                            <img src="./image/d727cf6e-4787-4b38-a86f-0cd8d91d02b2.webp">
                         </div>
                     </div>
                     <div class="list-content">
@@ -231,7 +365,7 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/e24c13b9-dd2a-4e15-9845-dd588a884e39.webp">
                         </div>
                     </div>
                     <div class="list-content">
@@ -257,7 +391,7 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/realingen-6.webp">
                         </div>
                     </div>
                     <div class="list-content">
@@ -283,7 +417,7 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/realingen-8.webp">
                         </div>
                     </div>
                     <div class="list-content">
@@ -309,111 +443,7 @@
                             </svg>
                         </div>
                         <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
-                        </div>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-title">
-                            <div class="list-name">Murter,크로아티아</div>
-                            <div class="list-star">
-                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
-                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
-                                </svg>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                        <div class="list-distance">8,637km 거리</div>
-                        <div class="list-data">10월 15일~23일</div>
-                        <div class="list-price">₩213,168/박</div>
-                    </div>
-                </div>
-                <div class="list-box">
-                    <div class="slide">
-                        <div class="heart-icon">
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
-                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
-                            </svg>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
-                        </div>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-title">
-                            <div class="list-name">Murter,크로아티아</div>
-                            <div class="list-star">
-                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
-                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
-                                </svg>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                        <div class="list-distance">8,637km 거리</div>
-                        <div class="list-data">10월 15일~23일</div>
-                        <div class="list-price">₩213,168/박</div>
-                    </div>
-                </div>
-                <div class="list-box">
-                    <div class="slide">
-                        <div class="heart-icon">
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
-                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
-                            </svg>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
-                        </div>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-title">
-                            <div class="list-name">Murter,크로아티아</div>
-                            <div class="list-star">
-                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
-                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
-                                </svg>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                        <div class="list-distance">8,637km 거리</div>
-                        <div class="list-data">10월 15일~23일</div>
-                        <div class="list-price">₩213,168/박</div>
-                    </div>
-                </div>
-                <div class="list-box">
-                    <div class="slide">
-                        <div class="heart-icon">
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
-                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
-                            </svg>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
-                        </div>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-title">
-                            <div class="list-name">Murter,크로아티아</div>
-                            <div class="list-star">
-                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
-                                    <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path>
-                                </svg>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                        <div class="list-distance">8,637km 거리</div>
-                        <div class="list-data">10월 15일~23일</div>
-                        <div class="list-price">₩213,168/박</div>
-                    </div>
-                </div>
-                <div class="list-box">
-                    <div class="slide">
-                        <div class="heart-icon">
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2; overflow: visible;">
-                                <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
-                            </svg>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./image/realingen-11.jpg">
+                            <img src="./image/realingen-9.jpg">
                         </div>
                     </div>
                     <div class="list-content">
@@ -463,7 +493,7 @@
             <div class="footer">
                 <div class="footer-map">
                     <button>
-                        지도 표시하기
+                        지도 <span>&nbsp;표시하기</span>
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:16px;width:16px;fill:#FFFFFF" aria-hidden="true" role="presentation" focusable="false">
                             <path d="M31.245 3.747a2.285 2.285 0 0 0-1.01-1.44A2.286 2.286 0 0 0 28.501 2l-7.515 1.67-10-2L2.5 3.557A2.286 2.286 0 0 0 .7 5.802v21.95a2.284 2.284 0 0 0 1.065 1.941A2.29 2.29 0 0 0 3.498 30l7.515-1.67 10 2 8.484-1.886a2.285 2.285 0 0 0 1.802-2.245V4.247a2.3 2.3 0 0 0-.055-.5zM12.5 25.975l-1.514-.303L9.508 26H9.5V4.665l1.514-.336 1.486.297v21.349zm10 1.36l-1.515.337-1.485-.297V6.025l1.514.304L22.493 6h.007v21.335z"></path>
                         </svg>
@@ -485,17 +515,17 @@
                             <a>회사 세부정보</a>
                         </div>
                         <div class="footer-menu-right">
-                            <a href="#popup-lang">
+                            <a class="fmra" id="show">
                                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
                                     <path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"></path>
                                 </svg>
                                 <a>한국어(KR)</a>
                             </a>
-                            <a href="#show1">
+                            <a class="fmra" id="show1">
                                 <span>₩</span>
                                 <a>KRW</a>
                             </a>
-                            <a href="#show2">
+                            <a class="fmra" id="show2">
                                 <a>지원 및 참고 자료</a>
                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
                                     <g fill="none"><path d="m4 20 11.2928932-11.29289322c.3905243-.39052429 1.0236893-.39052429 1.4142136 0l11.2928932 11.29289322"></path></g>
@@ -513,14 +543,191 @@
                             에어비앤비 플랫폼을 통하여 예약된 숙소, 체험, 호스트 서비스에 관한 의무와 책임은 해당
                             서비스를 제공하는 호스트에게 있습니다.
                         </div>
+                    </div>                    
+                </div>
+                <div class="footer-mobile">
+                    <div class="footer-mobile-box">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                    <path class="footer-mobile-search" d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path>
+                                </svg>
+                            </li>
+                            <li>둘러보기</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2.66667; overflow: visible;">
+                                    <path class="footer-mobile-heart" d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+                                </svg>
+                            </li>
+                            <li>위시리스트</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor; overflow: visible;">
+                                    <path class="footer-mobile-login" d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z"></path>
+                                </svg>
+                            </li>
+                            <li>로그인</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </footer>
         <div id="popup" w3-include-html="./html/popup.html">
-            
+            <div id="popup-bg" class="popup-lang">
+                <div class="popup-window">
+                    <div class="popup">
+                        <div class="popup-top">
+                            <button id="close"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
+                        </div>
+                        <div class="translation">
+                            <div>
+                                <span>번역</span>
+                                <p>설명과 후기가 한국어로 자동 번역됩니다.</p>
+                            </div>
+                            <div class="wrapper">
+                                <input type="checkbox" id="switch">
+                                <label for="switch" class="switch_label">
+                                    <span class="onf_btn"></span>
+                                </label>
+                                </div>                        
+                        </div>
+                        <div class="popup-title">추천 언어 및 지역</div>
+                        <div class="popup-lang-re popup-cont">
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">English</p><p class="curr">United States</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">English</p><p class="curr">United Kingdom</p></span>
+                            </div>
+                        </div>
+                        <div class="popup-title">언어와 지역을 선택하세요.</div>
+                        <div class="popup-cont">
+                            <div class="popup-cont-box mark1">
+                                <span><p class="curr-country">한국어</p><p class="curr">대한민국</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup-bg1" class="popup-curr">
+                <div class="popup-window">
+                    <div class="popup">
+                        <div class="popup-top">
+                            <button id="close1"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
+                        </div>
+                        <div class="popup-title">통화를 선택하세요.</div>
+                        <div class="popup-cont">
+                            <div class="popup-cont-box mark1">
+                                <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup-bg2" class="popup-etc">
+                <div class="popup-window">
+                    <div class="popup-etc-cont">
+                        <div class="popup-etc-cont-top">
+                            <button id="close2"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
+                        </div>
+                        <div class="popup-etc-list">
+                            <ul>
+                                <li>에어비앤비 지원</li>
+                                <li><a>도움말 센터</a></li>
+                                <li><a>에어커버</a></li>
+                                <li><a>안전 정보</a></li>
+                                <li>장애인 지원</li>
+                                <li>예약 취소 옵션</li>
+                                <li>에어비앤비의 코로나19대응 방안</li>
+                                <li>이웃 민원 신고</li>
+                            </ul>
+                            <ul>
+                                <li>커뮤니티</li>
+                                <li>Airbnb.org: 재난 구호 숙소</li>
+                                <li>아프간 난민 지원</li>
+                                <li>차별 철폐를 위한 노력</li>
+                            </ul>
+                            <ul>
+                                <li>호스팅</li>
+                                <li>호스팅 시작하기</li>
+                                <li>호스트를 위한 에어커버</li>
+                                <li>호스팅 자료 둘러보기</li>
+                                <li>커뮤니티 포럼 방문하기</li>
+                                <li>책임감 있는 호스팅</li>
+                            </ul>
+                            <ul>
+                                <li>소개</li>
+                                <li>뉴스룸</li>
+                                <li>새로운 기능에 대해 알아보기</li>
+                                <li>에어비앤비 공동 창업자의 메시지</li>
+                                <li>채용정보</li>
+                                <li>투자자 정보</li>
+                            </ul>
+                        </div>
+                    </div>                
+                </div>
+            </div>
         </div>
     </div>
+    
     <!-- <script>w3.includeHTML();</script> -->
 </body>
+
 </html>
