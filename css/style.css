@@ -375,9 +375,15 @@
     white-space:nowrap;
     display: flex;
 }
+.footer-menu-right div {
+    display: flex;
+}
 .footer-menu-right svg  {
     margin-left: 5px;
     cursor: pointer;
+}
+.footer-menu-right a {
+    margin: 0 10px;
 }
 .fmra {
     margin-left: 16px;
