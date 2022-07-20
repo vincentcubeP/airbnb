@@ -10,9 +10,9 @@
     padding: 14px 24px 0;   
 }
 .mobile-search {
-    height: 48px;
+    height: 54px;
     border: 1px solid #ddd;
-    border-radius: 48px;
+    border-radius: 54px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -23,8 +23,17 @@
 .mobile-search div {
     padding: 0 10px;
 }
+.mobile-search-icon {
+    margin-left: 10px;
+}
 .mobile-search-title {
     width: 100%;
+    font-size: 14px;
+}
+.mobile-search-title span {
+    font-size: 12px;
+    font-weight: none;
+    color: #717171;
 }
 .mobile-search-control {
     width: 36px;
@@ -38,22 +47,25 @@
     cursor: pointer;
 }
 
-#modal {
-    position:relative;
-    width:100%;
-    height:100%;
-    z-index:10;
-    display: none;
+.login-modal {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;      
 }
 .modal-box {
     width: 220px;
     height: 260px;
     border-radius: 10px;
     box-shadow: 0px 2px 6px 4px rgba(0,0,0,0.1);
-    position: absolute;
+    position: fixed;
     background-color: white;
     top: 80px;
     right: 80px;
+    display: none;
+    z-index:10;  
+}
+.modal-show {
+    display: block;
 }
 .modal-box-top {
     height: 100px;
@@ -647,6 +659,9 @@
     }
     .logo-name {
         display: none;
+    }
+    .modal-box {        
+        right: 40px;
     }
 }
 @media (max-width:960px) {
