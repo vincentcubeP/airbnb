@@ -519,14 +519,14 @@
                                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
                                     <path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"></path>
                                 </svg>
-                                <a href="">한국어(KR)</a>
+                                <a>한국어(KR)</a>
                             </div>
                             <div class="fmra" id="show1">
                                 <span>₩</span>
-                                <a href="">KRW</a>
+                                <a>KRW</a>
                             </div>
                             <div class="fmra" id="show2">
-                                <a href="">지원 및 참고 자료</a>
+                                <a>지원 및 참고 자료</a>
                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
                                     <g fill="none"><path d="m4 20 11.2928932-11.29289322c.3905243-.39052429 1.0236893-.39052429 1.4142136 0l11.2928932 11.29289322"></path></g>
                                 </svg>
@@ -582,58 +582,165 @@
                         <div class="popup-top">
                             <button id="close"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
                         </div>
-                        <div class="translation">
-                            <div>
-                                <span>번역</span>
-                                <p>설명과 후기가 한국어로 자동 번역됩니다.</p>
+                        <div class="popup-content">
+                            <div class="translation">
+                                <div>
+                                    <span>번역</span>
+                                    <p>설명과 후기가 한국어로 자동 번역됩니다.</p>
+                                </div>
+                                <div class="wrapper">
+                                    <input type="checkbox" id="switch">
+                                    <label for="switch" class="switch_label">
+                                        <span class="onf_btn"></span>
+                                    </label>
+                                    </div>                        
                             </div>
-                            <div class="wrapper">
-                                <input type="checkbox" id="switch">
-                                <label for="switch" class="switch_label">
-                                    <span class="onf_btn"></span>
-                                </label>
-                                </div>                        
-                        </div>
-                        <div class="popup-title">추천 언어 및 지역</div>
-                        <div class="popup-lang-re popup-cont">
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">English</p><p class="curr">United States</p></span>
+                            <div class="popup-title">추천 언어 및 지역</div>
+                            <div class="popup-lang-re popup-cont">
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">United States</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">United Kingdom</p></span>
+                                </div>
                             </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">English</p><p class="curr">United Kingdom</p></span>
-                            </div>
-                        </div>
-                        <div class="popup-title">언어와 지역을 선택하세요.</div>
-                        <div class="popup-cont">
-                            <div class="popup-cont-box mark1">
-                                <span><p class="curr-country">한국어</p><p class="curr">대한민국</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
-                            </div>
-                            <div class="popup-cont-box">
-                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                            <div class="popup-title">언어와 지역을 선택하세요.</div>
+                            <div class="popup-cont">
+                                <div class="popup-cont-box mark1">
+                                    <span><p class="curr-country">한국어</p><p class="curr">대한민국</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Azərbaycan dili</p><p class="curr">Azərbaycan</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Bahasa Indonesia</p><p class="curr">Indonesia</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Bosanski</p><p class="curr">Bosnai Hercegovina</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Català</p><p class="curr">Espanya</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Čeština</p><p class="curr">Česká republika</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Crnogorski</p><p class="curr">Crna Gora</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Dansk</p><p class="curr">Danmark</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Deutsch</p><p class="curr">Deutschland</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Deutsch</p><p class="curr">Österreich</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Deutsch</p><p class="curr">Schweiz</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Eesti</p><p class="curr">Eesti</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">Australia</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">Canada</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">Guyana</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">India</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">Ireland</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">New Zealand</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">Singapore</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">English</p><p class="curr">United Arab Emirates</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Argentina</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Belice</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Bolivia</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Chile</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Colombia</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Costa Rica</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Ecuador</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">El Salvador</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">España</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Estados Unidos</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Guatemala</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Honduras</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Latinoamérica</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">México</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Nicaragua</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Panamá</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Paraguay</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Perú</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Español</p><p class="curr">Venezuela</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Français</p><p class="curr">Belgique</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Français</p><p class="curr">Canada</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Français</p><p class="curr">France</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Français</p><p class="curr">Suisse</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Gaeilge</p><p class="curr">Éire</p></span>
+                                </div>
+                                <div class="popup-cont-box">
+                                    <span><p class="curr-country">Hrvatski</p><p class="curr">Hrvatska</p></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -663,19 +770,79 @@
                                 <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
                             </div>
                             <div class="popup-cont-box">
-                                <span><p class="curr-country">한국 원</p><p class="curr">KRW - ₩</p></span>
+                                <span><p class="curr-country">루마니아 레우</p><p class="curr">RON-lei</p></span>
                             </div>
                             <div class="popup-cont-box">
-                                <span><p class="curr-country">남아프리카공화국 란드</p><p class="curr">ZAR - R</p></span>
+                                <span><p class="curr-country">말레이시아 링깃</p><p class="curr">MYR-RM</p></span>
                             </div>
                             <div class="popup-cont-box">
-                                <span><p class="curr-country">노르웨이 크로네</p><p class="curr">NOK - kr</p></span>
+                                <span><p class="curr-country">멕시코 페소</p><p class="curr">MXN-$</p></span>
                             </div>
                             <div class="popup-cont-box">
-                                <span><p class="curr-country">뉴질랜드 달러</p><p class="curr">NZD - $</p></span>
+                                <span><p class="curr-country">모로코 디르함</p><p class="curr">MAD</p></span>
                             </div>
                             <div class="popup-cont-box">
-                                <span><p class="curr-country">덴마크 크로네</p><p class="curr">DKK - kr</p></span>
+                                <span><p class="curr-country">미국 달러</p><p class="curr">USD-$</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">불가리아 레프</p><p class="curr">BGN-лв.</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">브라질 레알</p><p class="curr">BRL-R$</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">사우스아라비아 리얄</p><p class="curr">SAR-SR</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">스웨덴 크로나</p><p class="curr">SEK-kr</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">스위스 프랑</p><p class="curr">CHF</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">신 타이완 달러</p><p class="curr">TWD-$</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">싱가포르 달러</p><p class="curr">SGD-$</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">아랍에미리트 디르함</p><p class="curr">aED-ﺩ.ﺇ</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">영국 파운드</p><p class="curr">GBP-£</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">우르과이 페소</p><p class="curr">UYU-$U</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">유로</p><p class="curr">EUR-€</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">이스라엘 신 셰켈</p><p class="curr">ILS-₪</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">인도 루피</p><p class="curr">INR-₹</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">일본 엔</p><p class="curr">JPY-¥</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">중국 위안</p><p class="curr">CNY-¥</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">체코 코루나</p><p class="curr">CZK-Kč</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">칠레 페소</p><p class="curr">CLP-$</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">캐나다 달러</p><p class="curr">CAD-$</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">코스타리카 콜른</p><p class="curr">CRC-₡</p></span>
+                            </div>
+                            <div class="popup-cont-box">
+                                <span><p class="curr-country">콜롬비아 페소</p><p class="curr">COP-$</p></span>
                             </div>
                         </div>
                     </div>

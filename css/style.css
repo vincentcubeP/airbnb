@@ -456,7 +456,7 @@
     z-index: -1;
     opacity: 0;
 }
-.popup-lang:target, .show1, .show2 {
+.show, .show1, .show2 {
     opacity: 1;
     z-index: 100;
     transition: all .2s;
@@ -475,12 +475,13 @@
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     /* 임시 지정 */
-    width: 1032px;
+    max-width: 1032px;
     height: 805px;
     /* 초기에 약간 아래에 배치 */
     /* transform: translate(-50%, -40%); */
     transform: translate(-50%, -50%);
     transition: all .5s;
+    overflow: hidden;
 }
 .show .popup, .show1 .popup, .show2 .popup-etc-cont {
     transform: translate(-50%, -50%);
@@ -513,6 +514,9 @@
 }
 .popup-top button:hover, .popup-etc-cont-top button:hover {
     background-color: #f7f7f7;
+}
+.popup-content {
+    overflow: auto;
 }
 .popup-title {
     margin: 24px;
@@ -583,7 +587,7 @@
 .popup-cont {
     padding: 0 24px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);    
 }
 .popup-cont-box {
     margin-bottom: 20px;
@@ -592,7 +596,7 @@
     height: 56px;
     font-size: 14px;
     border-radius: 6px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 .popup-cont-box:hover {    
     background-color: #f7f7f7;
@@ -739,4 +743,22 @@
     .footer-mobile {
         display: block;
     }    
+}
+
+
+/* media popup */
+@media (max-width:1100px) {
+    .popup-cont {
+        grid-template-columns: repeat(4, 1fr);    
+    }
+}
+@media (max-width:900px) {
+    .popup-cont {
+        grid-template-columns: repeat(3, 1fr);    
+    }
+}
+@media (max-width:740px) {
+    .popup {
+        display: none;
+    }
 }
