@@ -7,8 +7,12 @@
     <title>airbnb clone</title>
     <link rel="shortcut icon" href="./image/Airbnb_icon.png">
     <link rel="stylesheet" href="./css/reset.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
 </head>
@@ -85,7 +89,99 @@
                 </div>
                 <div class="header-bottom">
                     <div class="header-bottom-menu">
-                        <div class="header-slide"></div>
+                        <div class="header-slide">
+                            <!-- Swiper CSS -->
+                            <style>
+                                .header-slide {
+                                    position: relative;
+                                    width: calc(100% - 100px);
+                                }
+                                .swiper {
+                                    width: 100%;
+                                    height: 100%;
+                                    padding: 0 30px;
+                                }
+                                .swiper-slide {
+                                    text-align: center;
+                                    font-size: 18px;
+                                    background: #fff;
+
+                                    /* Center slide text vertically */
+                                    display: -webkit-box;
+                                    display: -ms-flexbox;
+                                    display: -webkit-flex;
+                                    display: flex;
+                                    -webkit-box-pack: center;
+                                    -ms-flex-pack: center;
+                                    -webkit-justify-content: center;
+                                    justify-content: center;
+                                    -webkit-box-align: center;
+                                    -ms-flex-align: center;
+                                    -webkit-align-items: center;
+                                    align-items: center;
+                                }
+                                .swiper-slide img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            </style>
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Slide 1</div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 4</div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                    <div class="swiper-slide">Slide 10</div>
+                                    <div class="swiper-slide">Slide 11</div>
+                                    <div class="swiper-slide">Slide 12</div>
+                                    <div class="swiper-slide">Slide 13</div>
+                                    <div class="swiper-slide">Slide 14</div>
+                                    <div class="swiper-slide">Slide 15</div>
+                                    <div class="swiper-slide">Slide 16</div>
+                                    <div class="swiper-slide">Slide 17</div>
+                                    <div class="swiper-slide">Slide 18</div>
+                                    <div class="swiper-slide">Slide 19</div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <script>
+                                /* Swiper JS (Initialize Swiper) */
+                                var swiper = new Swiper(".mySwiper", {
+                                    slidesPerView: 1,
+                                    spaceBetween: 30,
+                                    slidesPerGroup: 1,
+                                    speed: 500,
+                                    breakpoints: {
+                                        640: {
+                                            slidesPerView: 5,
+                                            slidesPerGroup: 5,
+                                        },
+                                        768: {
+                                            slidesPerView: 7,
+                                            slidesPerGroup: 7,
+                                        },
+                                        1024: {
+                                            slidesPerView: 10,
+                                            slidesPerGroup: 10,
+                                        },
+                                    },
+                                    loopFillGroupWithBlank: true,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next",
+                                        prevEl: ".swiper-button-prev",
+                                    },
+                                });
+                            </script>
+                        </div>
                         <div class="header-filter" href="#popup-filter-bg">
                             <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display:block;height:14px;width:14px;fill:currentColor" aria-hidden="true" role="presentation" focusable="false">
                                 <path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
