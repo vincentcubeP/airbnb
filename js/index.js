@@ -91,32 +91,34 @@ $(document).mouseup(function (e){
     if(LayerPopup.has(e.target).length === 0){
         $(".popup-etc").removeClass("show2");
     }
-  });
+});
 
 
-  /* Swiper JS (Initialize Swiper) */
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    speed: 500,
-    breakpoints: {
-        640: {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
+$(document).ready(function () {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        speed: 500,
+        breakpoints: {
+            640: {
+                slidesPerView: 5,
+                slidesPerGroup: 5,
+            },
+            768: {
+                slidesPerView: 7,
+                slidesPerGroup: 7,
+            },
+            1024: {
+                slidesPerView: 10,
+                slidesPerGroup: 10,
+            },
         },
-        768: {
-            slidesPerView: 7,
-            slidesPerGroup: 7,
+        loopFillGroupWithBlank: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
-        1024: {
-            slidesPerView: 10,
-            slidesPerGroup: 10,
-        },
-    },
-    loopFillGroupWithBlank: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    });
+
 });
