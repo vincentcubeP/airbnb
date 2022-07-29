@@ -523,12 +523,11 @@
     /* transform: translate(-50%, -40%); */
     transform: translate(-50%, -50%);
     transition: all .5s;
-    overflow: hidden;
 }
 .global-popup-top button {
-    margin-left: 20px;
+    margin: 20px;
     width: 30px;
-    height: 80px;
+    height: 30px;
     background: none;
     border: none;
     border-radius: 50%;
@@ -538,32 +537,38 @@
     background-color: #f7f7f7;
 }
 .global-tab {
+    max-height: 880px;
     overflow: auto;
 }
-.global-tab ul {
+.tabs {
     height: 70px;
     margin: 0 20px;
+}
+.global-tab ul {
+   height: 40px;
     display: flex;
-    /* border-bottom: 1px solid #f7f7f7; */
 }
 .global-tab ul li {
     margin-right: 20px;
     font-size: 14px;
-}
-.global-tab ul li button {
     padding: 10px;
-    border: none;
     background-color: white;
     font-weight: 600;  
     color: #7f7f7f;
     border-radius: 6px;
     cursor: pointer;
 }
-.global-tab ul li button:hover {
+.global-tab ul li:hover {
     background-color: #f7f7f7;
 }
 .global-tab ul .current button {
     color: #222;    
+}
+.tab-content {
+    display: none;
+}
+.tab-content.current {
+    display: inline;
 }
 
 .popup-filter {
@@ -585,14 +590,16 @@
 }
 .popup-filter-window {
     margin: 40px auto;
+    max-width: 800px;
+    max-height: 800px;
     background-color: #ffffff;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
 }
 .popup-filter-top {
-    padding: 20px 0;
-    display: flex;
+    padding: 20px 0;   
     align-items: center;
+    position: relative;
 }
 .popup-filter-window button {
     background: none;
@@ -600,6 +607,8 @@
     cursor: pointer;
 }
 .popup-filter-top button {
+    position: absolute;
+    top: 15px;
     margin-left: 20px;
     width: 30px;
     height: 30px;
@@ -608,10 +617,43 @@
 .popup-filter-top button:hover {
     background-color: #f7f7f7;
 }
+.popup-filter-top div {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
 .popup-filter-content {
-    border-top: 1px solid #f7f7f7;
-    border-bottom: 1px solid #f7f7f7;
+    padding: 0 24px;
+    max-height: 664px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     overflow: auto;
+}
+.pf-cont-title {
+    padding-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+.pf-cont-sub {
+    padding-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+}
+.pf-cont-frame {
+    margin: 0 auto;
+    padding: 24px 0;
+    border-bottom: 1px solid #ebebeb;    
+}
+.pf-cont-box {
+    width: 100%;        
+}
+.price-gap-chart {
+    margin: 0 auto;
+    width: 700px;
+    height: 120px;
+    border: 1px solid black;
 }
 .popup-filter-bottom {
     padding: 20px;
@@ -662,6 +704,7 @@
     height: 100%;
 }
 .popup {
+    max-height: 940px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -711,6 +754,7 @@
     background-color: #f7f7f7;
 }
 .popup-content {
+    max-height: 880px;
     overflow: auto;
 }
 .popup-title {

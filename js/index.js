@@ -29,6 +29,18 @@ $(document).mouseup(function (e){
     }
 });
 
+$(document).ready(function(){  
+    $('ul.tabs li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+  
+      $('ul.tabs li').removeClass('current');
+      $('.tab-content').removeClass('current');
+  
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    })
+  
+})
 
 /* filter popup */
 $(document).on("click", ".header-filter", function (e){
@@ -47,7 +59,6 @@ $(document).mouseup(function (e){
 });
 
 /* popup */
-
 $(document).on("click", "#show", function (e){
     var target = $(this).attr("href");
     $(target).addClass("show");
@@ -93,7 +104,7 @@ $(document).mouseup(function (e){
     }
 });
 
-
+/* swipper */
 $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,

@@ -614,9 +614,11 @@
                         </div>
                         <div class="global-tab">
                             <ul class="tabs">
-                                <li class="tab-link current" data-tab="tab1"><button>언어와 지역</button></li>    
-                                <li class="tab-link" data-tab="tab2"><button>통화</button></li>
+                                <li class="tab-link current" data-tab="tab-1">언어와 지역</li>    
+                                <li class="tab-link" data-tab="tab-2">통화</li>
                             </ul>
+                            <div id="tab-1" class="tab-content current">ddd</div>
+                            <div id="tab-2" class="tab-content">addddfdfdfd</div>
                         </div>
                     </div>
                 </div>
@@ -625,9 +627,74 @@
                 <div class="popup-filter-window">
                     <div class="popup-filter-top">
                         <button id="close-filter" href="#popup-filter-bg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
-                        <p>필터</p>
+                        <div>필터</div>
                     </div>
-                    <div class="popup-filter-content"></div>
+                    <div class="popup-filter-content">
+                        <div class="pf-cont-frame price-gap">
+                            <div class="pf-cont-title">가격범위</div>
+                            <div class="pf-cont-sub">평균 1박 요금은 입니다.</div>
+                            <div class="pf-cont-box">
+                                <div class="price-gap-chart"></div>
+                                <div class="price-gap-box">
+                                    <div class="price-gap-min"></div>
+                                    <div class="price-gap-bar"></div>
+                                    <div class="price-gap-max"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame accom-type">
+                            <div class="pf-cont-title">숙소 유형</div>
+                            <div class="pf-cont-box accom-box">
+                                <div class="accom-cont">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame bed-room">
+                            <div class="pf-cont-title">침실과 침대</div>
+                            <div class="pf-cont-box">
+                                <div class="room-box"></div>
+                                <div class="bed-box"></div>
+                                <p>더 표시</p>
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame">
+                            <div class="pf-cont-title">건물 유형</div>
+                            <div class="pf-cont-box">
+                                
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame">
+                            <div class="pf-cont-title">편의 시설</div>
+                            <div class="pf-cont-box">
+                                
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame">
+                            <div class="pf-cont-title">예약 옵션</div>
+                            <div class="pf-cont-box">
+                                
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame">
+                            <div class="pf-cont-title">접근성 편의</div>
+                            <div class="pf-cont-box">
+                                
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame">
+                            <div class="pf-cont-title">최고 수준의 숙소</div>
+                            <div class="pf-cont-box">
+                                
+                            </div>
+                        </div>
+                        <div class="pf-cont-frame">
+                            <div class="pf-cont-title">호스트 언어</div>
+                            <div class="pf-cont-box">
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div class="popup-filter-bottom">
                         <button class="pfb-buttom1">전체 해제</button>
                         <button class="pfb-buttom2">숙소 556개 표시</button>
@@ -640,7 +707,7 @@
                         <div class="popup-top">
                             <button id="close" href="#popup-bg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
                         </div>
-                        <div id="tab-1" class="popup-content tab-content">
+                        <div class="popup-content">
                             <div class="translation">
                                 <div>
                                     <span>번역</span>
@@ -810,7 +877,7 @@
                         <div class="popup-top">
                             <button id="close1" href="#popup-bg1"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></button>
                         </div>
-                        <div id="tab-2" class="tab-content">
+                        <div class="popup-content">
                             <div class="popup-title">통화를 선택하세요.</div>
                             <div class="popup-cont">
                                 <div class="popup-cont-box mark1">
