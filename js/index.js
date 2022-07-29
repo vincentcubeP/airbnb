@@ -104,11 +104,11 @@ $(document).mouseup(function (e){
     }
 });
 
-/* swipper */
+/* swiper */
 $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 0,
         slidesPerGroup: 1,
         speed: 500,
         breakpoints: {
