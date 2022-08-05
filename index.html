@@ -637,11 +637,11 @@
                                             <p>설명과 후기가 한국어로 자동 번역됩니다.</p>
                                         </div>
                                         <div class="wrapper">
-                                            <input type="checkbox" id="switch">
+                                            <input type="checkbox" class="switch">
                                             <label for="switch" class="switch_label">
                                                 <span class="onf_btn"></span>
                                             </label>
-                                            </div>                        
+                                        </div>                        
                                     </div>
                                     <div class="popup-title">추천 언어 및 지역</div>
                                     <div class="popup-lang-re popup-cont">
@@ -906,26 +906,109 @@
                             <div class="pf-cont-box">
                                 <div class="price-gap-chart"></div>
                                 <div class="price-gap-box">
-                                    <div class="price-gap-min"></div>
-                                    <div class="price-gap-bar"></div>
-                                    <div class="price-gap-max"></div>
+                                    <div class="price-gap-min">
+                                        <div class="pgm-title">최저 요금</div>
+                                        <div class="pgm-box">
+                                            <div class="pgm-won">₩</div>
+                                            <div class="pgm-price">13000</div>
+                                        </div>
+                                    </div>
+                                    <div class="price-gap-bar">-</div>
+                                    <div class="price-gap-max">
+                                        <div class="pgm-title">최저 요금</div>
+                                        <div class="pgm-box">
+                                            <div class="pgm-won">₩</div>
+                                            <div class="pgm-price">6500000+</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="pf-cont-frame accom-type">
                             <div class="pf-cont-title">숙소 유형</div>
                             <div class="pf-cont-box accom-box">
-                                <div class="accom-cont">
-
+                                <div class="accom-cont pf-grid">
+                                    <div class="accom-cont-frame">
+                                        <div class="acf-check">
+                                            <label>
+                                                <input type="checkbox" class="checkbox">
+                                            </label>
+                                        </div>
+                                        <div class="acf-box">
+                                            <div class="acf-title">집 전체</div>
+                                            <div class="acf-content">단독으로 사용하는 공간 전체</div>
+                                        </div>
+                                    </div>
+                                    <div class="accom-cont-frame">
+                                        <div class="acf-check">
+                                            <label>
+                                                <input type="checkbox" class="checkbox">
+                                            </label>
+                                        </div>
+                                        <div class="acf-box">
+                                            <div class="acf-title">개인실</div>
+                                            <div class="acf-content">집 또는 호텔의 개인실과 일부 공용 공간</div>
+                                        </div>
+                                    </div>
+                                    <div class="accom-cont-frame">
+                                        <div class="acf-check">
+                                            <label>
+                                                <input type="checkbox" class="checkbox">
+                                            </label>
+                                        </div>
+                                        <div class="acf-box">
+                                            <div class="acf-title">다인실</div>
+                                            <div class="acf-content">다른 사람들과 함계 사용하는 다인실 및 공용 공간</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="pf-cont-frame bed-room">
                             <div class="pf-cont-title">침실과 침대</div>
                             <div class="pf-cont-box">
-                                <div class="room-box"></div>
-                                <div class="bed-box"></div>
-                                <p>더 표시</p>
+                                <div class="room-box pfc-box">
+                                    <div class="pfc-box-title">침실</div>
+                                    <div class="pfc-button">
+                                        <button class="pfc-button-select pfcb0">상관없음</button>
+                                        <button class="pfc-button-select pfcb1">1</button>
+                                        <button class="pfc-button-select pfcb2">2</button>
+                                        <button class="pfc-button-select pfcb3">3</button>
+                                        <button class="pfc-button-select pfcb4">4</button>
+                                        <button class="pfc-button-select pfcb5">5</button>
+                                        <button class="pfc-button-select pfcb6">6</button>
+                                        <button class="pfc-button-select pfcb7">7</button>
+                                        <button class="pfc-button-select pfcb8">8+</button>
+                                    </div>
+                                </div>
+                                <div class="bed-box pfc-box">
+                                    <div class="pfc-box-title">침대</div>
+                                    <div class="pfc-button">
+                                        <button class="pfc-button-select pfcb0">상관없음</button>
+                                        <button class="pfc-button-select pfcb1">1</button>
+                                        <button class="pfc-button-select pfcb2">2</button>
+                                        <button class="pfc-button-select pfcb3">3</button>
+                                        <button class="pfc-button-select pfcb4">4</button>
+                                        <button class="pfc-button-select pfcb5">5</button>
+                                        <button class="pfc-button-select pfcb6">6</button>
+                                        <button class="pfc-button-select pfcb7">7</button>
+                                        <button class="pfc-button-select pfcb8">8+</button>
+                                    </div>
+                                </div>
+                                <div class="bath-box pfc-box">
+                                    <div class="pfc-box-title">욕실</div>
+                                    <div class="pfc-button">
+                                        <button class="pfc-button-select pfcb0">상관없음</button>
+                                        <button class="pfc-button-select pfcb1">1</button>
+                                        <button class="pfc-button-select pfcb2">2</button>
+                                        <button class="pfc-button-select pfcb3">3</button>
+                                        <button class="pfc-button-select pfcb4">4</button>
+                                        <button class="pfc-button-select pfcb5">5</button>
+                                        <button class="pfc-button-select pfcb6">6</button>
+                                        <button class="pfc-button-select pfcb7">7</button>
+                                        <button class="pfc-button-select pfcb8">8+</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="pf-cont-frame">
@@ -936,32 +1019,228 @@
                         </div>
                         <div class="pf-cont-frame">
                             <div class="pf-cont-title">편의 시설</div>
-                            <div class="pf-cont-box">
-                                
+                            <div class="pf-cont-box pf-grid">
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">무선 인터넷</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">주방</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">세탁기</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">건조기</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">에어컨</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">난방</div>                                        
+                                    </div>
+                                </div>
+                                <p class="more">더 표시</p>
                             </div>
                         </div>
                         <div class="pf-cont-frame">
                             <div class="pf-cont-title">예약 옵션</div>
                             <div class="pf-cont-box">
-                                
+                                <div class="best-box">
+                                    <div class="bb-content">
+                                        <div class="bbc-title">즉시 예약</div>
+                                        <div class="bbc-cont">호스트 승인을 기다릴 필요 없이 예약할 수 있는 숙소</div>
+                                    </div>
+                                    <div class="bb-switch">
+                                        <div class="wrapper">
+                                            <input type="checkbox" class="switch">
+                                            <label for="switch" class="switch_label">
+                                                <span class="onf_btn"></span>
+                                            </label>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="best-box">
+                                    <div class="bb-content">
+                                        <div class="bbc-title">셀프 체크인</div>
+                                        <div class="bbc-cont">숙소에 도착한 후 복잡한 절차 없이 쉽게 입실할 수 있습니다.</div>
+                                    </div>
+                                    <div class="bb-switch">
+                                        <div class="wrapper">
+                                            <input type="checkbox" class="switch">
+                                            <label for="switch" class="switch_label">
+                                                <span class="onf_btn"></span>
+                                            </label>
+                                        </div>    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="pf-cont-frame">
-                            <div class="pf-cont-title">접근성 편의</div>
-                            <div class="pf-cont-box">
-                                
+                            <div class="pf-cont-title access">접근성 편의</div>
+                            <div class="access-cont">호스트가 제공하고 에어비앤비에서 검토한 정보입니다.</div>
+                            <div class="access-door">게스트 출입구 및 주차장</div>
+                            <div class="pf-cont-box pf-grid">
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">게스트 출입구에 계단이나 문턱 없음</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">너비81cm 이상의 게스트 출입구</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">휠체어 접근 가능 주차 공간</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">게스트 출입구까지 계단이나 문턱 없이 이동 가능</div>                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="pf-cont-frame">
                             <div class="pf-cont-title">최고 수준의 숙소</div>
                             <div class="pf-cont-box">
-                                
+                                <div class="best-box">
+                                    <div class="bb-content">
+                                        <div class="bbc-title">슈퍼호스트</div>
+                                        <div class="bbc-cont">슈퍼호스트의 숙소에 머물러보세요</div>
+                                        <div class="more">더 알아보기</div>
+                                    </div>
+                                    <div class="bb-switch">
+                                        <div class="wrapper">
+                                            <input type="checkbox" class="switch">
+                                            <label for="switch" class="switch_label">
+                                                <span class="onf_btn"></span>
+                                            </label>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="best-box">
+                                    <div class="bb-content">
+                                        <div class="bbc-title">에어비앤비 플러스</div>
+                                        <div class="bbc-cont">퀼리티와 인테리어 디자인이 검증된 순소 셀렉션</div>
+                                    </div>
+                                    <div class="bb-switch">
+                                        <div class="wrapper">
+                                            <input type="checkbox" class="switch">
+                                            <label for="switch" class="switch_label">
+                                                <span class="onf_btn"></span>
+                                            </label>
+                                        </div>    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="pf-cont-frame">
                             <div class="pf-cont-title">호스트 언어</div>
-                            <div class="pf-cont-box">
-                                
+                            <div class="pf-cont-box pf-grid">
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">영어</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">프랑스어</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">독일어</div>                                        
+                                    </div>
+                                </div>
+                                <div class="accom-cont-frame">
+                                    <div class="acf-check">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="acf-box">
+                                        <div class="acf-title">일본어</div>                                        
+                                    </div>
+                                </div>
+                                <p class="more">더 표시</p>
                             </div>
                         </div>
                     </div>
@@ -984,11 +1263,11 @@
                                     <p>설명과 후기가 한국어로 자동 번역됩니다.</p>
                                 </div>
                                 <div class="wrapper">
-                                    <input type="checkbox" id="switch">
+                                    <input type="checkbox" class="switch">
                                     <label for="switch" class="switch_label">
                                         <span class="onf_btn"></span>
                                     </label>
-                                    </div>                        
+                                </div>                        
                             </div>
                             <div class="popup-title">추천 언어 및 지역</div>
                             <div class="popup-lang-re popup-cont">
@@ -1290,8 +1569,6 @@
             </div>
         </div>
     </div>
-    
-    <!-- <script>w3.includeHTML();</script> -->
 </body>
 
 </html>
