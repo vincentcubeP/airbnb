@@ -182,22 +182,26 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    var mainswiper = new mainSwiper(".mainSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        slidesPerGroup: 1,
-        speed: 500,
+    var swiper = new Swiper(".mainSwiper", {
+        // slidesPerView: 1,
+        // spaceBetween: 0,
+        // slidesPerGroup: 1,
+        // speed: 500,
         // breakpoints: {
-        //     640: {
+        //     200: {
         //         slidesPerView: 1,
         //         slidesPerGroup: 1,
         //     },
         // },
-        loopFillGroupWithBlank: true,
+        // loopFillGroupWithBlank: true,
         navigation: {
             nextEl: ".main-swiper-button-next",
             prevEl: ".main-swiper-button-prev",
         },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
     });
 
 });
